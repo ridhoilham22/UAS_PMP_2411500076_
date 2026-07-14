@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            // Input Merk Sepatu
+            
             TextField(
               controller: merkController,
               decoration: const InputDecoration(
@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 12),
 
-            // Input Ukuran Sepatu (Tipe Keyboard Angka)
+            
             TextField(
               controller: ukuranController,
               keyboardType: TextInputType.number,
@@ -135,7 +135,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 16),
 
-            // Tombol Simpan / Update
+            
             SizedBox(
               width: double.infinity,
               height: 45,
@@ -150,7 +150,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 20),
 
-            // List Tampilan Data Sepatu
+            
             Expanded(
               child: ValueListenableBuilder(
                 valueListenable: box.listenable(),
