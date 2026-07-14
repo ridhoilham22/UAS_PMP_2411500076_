@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 import 'splashscreen.dart';
-import 'home_page.dart'; // Pastikan file home_page.dart sudah diubah ke versi sepatu
+import 'home_page.dart'; 
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Inisialisasi Hive untuk Flutter
+
   await Hive.initFlutter();
 
-  // Membuka box baru khusus untuk data sepatu
+  
   await Hive.openBox("sepatuBox");
 
   runApp(const MyApp());
@@ -23,11 +23,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Aplikasi Data Sepatu', // Judul aplikasi disesuaikan
+      title: 'Aplikasi Data Sepatu', 
       theme: ThemeData(
         primarySwatch: Colors.blue,
         useMaterial3:
-            false, // Menjaga konsistensi tema jika Anda menggunakan primarySwatch
+            false, 
       ),
       home: const SplashScreen(),
     );

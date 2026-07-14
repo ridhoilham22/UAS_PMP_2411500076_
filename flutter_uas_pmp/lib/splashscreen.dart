@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor:
-          Colors.blueAccent, // Menggunakan warna biru aksen agar serasi
+          Colors.blueAccent, 
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -9,11 +9,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // Controller disesuaikan untuk data sepatu
+  
   final merkController = TextEditingController();
   final ukuranController = TextEditingController();
 
-  // Nama box diganti menjadi sepatuBox
+  
   final box = Hive.box("sepatuBox");
 
   bool isEdit = false;
@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
       return;
     }
 
-    // Struktur Map disesuaikan untuk sepatu
+    
     Map<String, dynamic> data = {'merk': merk, 'ukuran': ukuran};
 
     if (isEdit) {
